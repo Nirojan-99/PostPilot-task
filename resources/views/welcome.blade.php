@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
         .responsive-text {
             font-size: 82px;
@@ -41,6 +43,37 @@
             .responsive-text {
                 font-size: 82px;
             }
+        }
+
+        .scrolling-wrapper {
+            display: flex;
+            overflow-x: auto;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        .box {
+            flex: 0 0 24%;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 5px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .image-container img {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+            border-bottom: 5px solid transparent;
+        }
+
+        .image-container img.selected {
+            border-bottom: 2px solid green;
         }
     </style>
 </head>
@@ -233,12 +266,284 @@
             <h2 class="text-center responsive-text2 mb-5">Everything your brand needs to <br>
                 <span style="color: #009387;font-family: 'Covered By Your Grace';">make your brand unforgettable</span>
             </h2>
+
+            <div class="row justify-content-center g-2">
+                <div class="col-md-4 mb-2 row p-2 rounded" style="background-color: #FDF3EA;">
+                    <img src="{{URL('images/img11.png')}}" class=" img-fluid  w-75 m-auto col-12">
+                    <div class="mb-4 col-12"></div>
+                    <div class="text-center h4 m-auto w-75 col-12">Plug-and-play with your stack</div>
+                    <div class="mb-4 col-12"></div>
+                    <div class="text-center m-auto w-75 col-12">Native integrations provide seamless segmentation, automation & tracking. No clunky spreadsheets.</div>
+                </div>
+                <div class="col-md-4 mb-2 row p-2 rounded" style="background-color: #E0F8F2;">
+                    <img src="{{URL('images/img12.png')}}" class=" img-fluid  w-75 m-auto col-12">
+                    <div class="mb-4 col-12"></div>
+                    <div class="text-center h4 m-auto w-75 col-12">Run campaigns on autopilot</div>
+                    <div class="mb-4 col-12"></div>
+                    <div class="text-center m-auto w-75 col-12">Ink profits while you sleep: Just set it and forget it.</div>
+                </div>
+                <div class="col-md-4 mb-2 row p-2 rounded" style="background-color: #E0F8F2;">
+                    <img src="{{URL('images/img13.png')}}" class=" img-fluid  w-75 m-auto col-12">
+                    <div class="mb-4 col-12"></div>
+                    <div class="text-center h4 m-auto w-75 col-12">Real-time ROI dashboard</div>
+                    <div class="mb-4 col-12"></div>
+                    <div class="text-center m-auto w-75 col-12">Track performance of every postcard by customer or discount code. Your CFO will love it.</div>
+                </div>
+
+            </div>
+            <div class="row justify-content-center g-2">
+                <div class="col-md-4 mb-2 row p-2 rounded" style="background-color: #D9F2F7;">
+                    <img src="{{URL('images/img14.png')}}" class=" img-fluid  w-75 m-auto col-12">
+                    <div class="mb-4 col-12"></div>
+                    <div class="text-center h4 m-auto w-75 col-12">Deliver WOW with *real* handwritten cards</div>
+                    <div class="mb-4 col-12"></div>
+                    <div class="text-center m-auto w-75 col-12"> Our proprietary robots use real pens and ink for an unforgettable VIP touch.</div>
+                </div>
+                <div class="col-md-4 mb-2 row p-2 rounded" style="background-color: #FAEDED;">
+                    <img src="{{URL('images/img15.png')}}" class=" img-fluid  w-75 m-auto col-12">
+                    <div class="mb-4 col-12"></div>
+                    <div class="text-center h4 m-auto w-75 col-12">Predictable pricing</div>
+                    <div class="mb-4 col-12"></div>
+                    <div class="text-center m-auto w-75 col-12">Ink profits while you sleep: Just set it and forget it.</div>
+                </div>
+                <div class="col-md-4 mb-2 row p-2 rounded" style="background-color: #F1F1F1;">
+                    <img src="{{URL('images/img16.png')}}" class=" img-fluid  w-75 m-auto col-12">
+                    <div class="mb-4 col-12"></div>
+                    <div class="text-center h4 m-auto w-75 col-12">Complimentary concierge service</div>
+                    <div class="mb-4 col-12"></div>
+                    <div class="text-center m-auto w-75 col-12"> DTC is in our DNA. Our pros will build your strategy and custom designs using battle-tested best practices.</div>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <section class="py-5 w-100 " style="background-color: #E3F8F8;">
+        <div class="container w-100">
+            <h2 class="text-center responsive-text2 mb-5">Fast launch. Fast results.<br>
+                <span style="color: #009387;font-family: 'Covered By Your Grace';">Here's how</span>
+            </h2>
+            <div class="row align-self-center">
+                <div class="col-1 " style="color: #00938766;font-size: 40px;font-family: 'Covered By Your Grace';">1</div>
+                <div class="col-2 h4" style="color: #2E2F3566;">Segment</div>
+            </div>
+            <div class="row align-self-center">
+                <div class="col-1 " style="color: #00938766;font-size: 40px;font-family: 'Covered By Your Grace';">2</div>
+                <div class="col-2 h4" style="color: #2E2F3566;">Design</div>
+            </div>
+            <div class="row align-self-center">
+                <div class="col-1 " style="color: #009387;font-size: 40px;font-family: 'Covered By Your Grace';">3</div>
+                <div class="col-4 h4" style="color: #333;">
+                    <div>Send</div>
+                    <div style="font-size: 17px;font-weight: 400;">One-off announcements or automatically triggered flows. Customers receive their personalized cards within a week.</div>
+                </div>
+            </div>
+            <div class="row align-self-center">
+                <div class="col-1 " style="color: #00938766;font-size: 40px;font-family: 'Covered By Your Grace';">4</div>
+                <div class="col-2 h4" style="color: #2E2F3566;">Convert</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5  bg-light">
+        <div class="container ">
+            <h2 class="text-center responsive-text2 mb-5">PostPilot is 🔥 for
+                <span style="color: #009387;font-family: 'Covered By Your Grace';">DTC</span>
+            </h2>
+
+            <div class="container">
+                <div class="scrolling-wrapper" id="scrolling-wrapper">
+
+                    <div class="box  p-3 rounded-5">
+                        <div class="row align-self-center justify-content-center mb-3">
+                            <img class="col-3 w-100 h-100" src="{{URL('images/img21.png')}}" alt="">
+                            <div class="col-7 text-left p-0">
+                                <div style="font-size: 13px;font-weight: 700;">
+                                    Helen Guo
+                                </div>
+                                <div style="font-size: 12px;font-weight: 400;"> @HelenGuo_</div>
+                            </div>
+                            <img class="col-2 w-100 h-100" src="{{URL('images/img20.png')}}" alt="">
+                        </div>
+                        <div style="font-size: 14px;">Been using PostPilot for years. Good for re-engagement. And you can get creative with your messaging.</div>
+                    </div>
+
+                    <div class="box  p-3">
+                        <div class="row align-self-center justify-content-center mb-3">
+                            <img class="col-3 w-100 h-100" src="{{URL('images/img21.png')}}" alt="">
+                            <div class="col-7 text-left p-0">
+                                <div style="font-size: 13px;font-weight: 700;">
+                                    Helen Guo
+                                </div>
+                                <div style="font-size: 12px;font-weight: 400;"> @HelenGuo_</div>
+                            </div>
+                            <img class="col-2 w-100 h-100" src="{{URL('images/img20.png')}}" alt="">
+                        </div>
+                        <div style="font-size: 14px;">Been using PostPilot for years. Good for re-engagement. And you can get creative with your messaging.</div>
+                    </div>
+
+                    <div class="box  p-3">
+                        <div class="row align-self-center justify-content-center mb-3">
+                            <img class="col-3 w-100 h-100" src="{{URL('images/img21.png')}}" alt="">
+                            <div class="col-7 text-left p-0">
+                                <div style="font-size: 13px;font-weight: 700;">
+                                    Helen Guo
+                                </div>
+                                <div style="font-size: 12px;font-weight: 400;"> @HelenGuo_</div>
+                            </div>
+                            <img class="col-2 w-100 h-100" src="{{URL('images/img20.png')}}" alt="">
+                        </div>
+                        <div style="font-size: 14px;">Been using PostPilot for years. Good for re-engagement. And you can get creative with your messaging.</div>
+                    </div>
+
+                    <div class="box  p-3">
+                        <div class="row align-self-center justify-content-center mb-3">
+                            <img class="col-3 w-100 h-100" src="{{URL('images/img21.png')}}" alt="">
+                            <div class="col-7 text-left p-0">
+                                <div style="font-size: 13px;font-weight: 700;">
+                                    Helen Guo
+                                </div>
+                                <div style="font-size: 12px;font-weight: 400;"> @HelenGuo_</div>
+                            </div>
+                            <img class="col-2 w-100 h-100" src="{{URL('images/img20.png')}}" alt="">
+                        </div>
+                        <div style="font-size: 14px;">Been using PostPilot for years. Good for re-engagement. And you can get creative with your messaging.</div>
+                    </div>
+
+                    <div class="box  p-3">
+                        <div class="row align-self-center justify-content-center mb-3">
+                            <img class="col-3 w-100 h-100" src="{{URL('images/img21.png')}}" alt="">
+                            <div class="col-7 text-left p-0">
+                                <div style="font-size: 13px;font-weight: 700;">
+                                    Helen Guo
+                                </div>
+                                <div style="font-size: 12px;font-weight: 400;"> @HelenGuo_</div>
+                            </div>
+                            <img class="col-2 w-100 h-100" src="{{URL('images/img20.png')}}" alt="">
+                        </div>
+                        <div style="font-size: 14px;">Been using PostPilot for years. Good for re-engagement. And you can get creative with your messaging.</div>
+                    </div>
+
+                    <div class="box  p-3">
+                        <div class="row align-self-center justify-content-center mb-3">
+                            <img class="col-3 w-100 h-100" src="{{URL('images/img21.png')}}" alt="">
+                            <div class="col-7 text-left p-0">
+                                <div style="font-size: 13px;font-weight: 700;">
+                                    Helen Guo
+                                </div>
+                                <div style="font-size: 12px;font-weight: 400;"> @HelenGuo_</div>
+                            </div>
+                            <img class="col-2 w-100 h-100" src="{{URL('images/img20.png')}}" alt="">
+                        </div>
+                        <div style="font-size: 14px;">Been using PostPilot for years. Good for re-engagement. And you can get creative with your messaging.</div>
+                    </div>
+
+                    <div class="box  p-3">
+                        <div class="row align-self-center justify-content-center mb-3">
+                            <img class="col-3 w-100 h-100" src="{{URL('images/img21.png')}}" alt="">
+                            <div class="col-7 text-left p-0">
+                                <div style="font-size: 13px;font-weight: 700;">
+                                    Helen Guo
+                                </div>
+                                <div style="font-size: 12px;font-weight: 400;"> @HelenGuo_</div>
+                            </div>
+                            <img class="col-2 w-100 h-100" src="{{URL('images/img20.png')}}" alt="">
+                        </div>
+                        <div style="font-size: 14px;">Been using PostPilot for years. Good for re-engagement. And you can get creative with your messaging.</div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="w-100 mt-5 text-center">
+                <a href="#" class="btn btn-primary my-2 bg-warning border fw-bold text-center">Try it risk free</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="py-5 " style="background-color: #EEECFF;">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-6 col-xs-12 ">
+                    <img src="{{URL('images/img22.png')}}" alt="" class="w-75">
+                </div>
+                <div class="col-md-6 col-xs-12 mt-md-0 mt-xs-5 ">
+                    <h1 class="text-left  mb-3 ">How <span style="color: #009387;font-family: 'Covered By Your Grace';">Obvi</span> Drives Profits with Hands-Off Postcard Campaigns
+
+                    </h1>
+                    <p>The 🚀 supplements brand wanted to offset high ad costs and reach dormant customers. They scored 1000%+ ROIs.</p>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div style="font-size: 24px;font-weight: 800;">1468%</div>
+                            <div style="font-size: 12px;">ROI</div>
+                        </div>
+                        <div class="col">
+                            <div style="font-size: 24px;font-weight: 800;">8.59%</div>
+                            <div style="font-size: 12px;">Conversion Rate</div>
+                        </div>
+                        <div class="col">
+                            <div style="font-size: 24px;font-weight: 800;">$73,457</div>
+                            <div style="font-size: 12px;">Sales Generated</div>
+                        </div>
+                    </div>
+
+                    <div class="w-100 text-center">
+                        <a href="" class="btn border px-4 py-2 rounder-pill bg-light" style="font-weight: 700;">Read Case study</a>
+                    </div>
+
+                    <div class="image-container row mt-5 w-100 ">
+                        <img src="{{URL('images/br1-logo.png')}}" class="col-3 pb-2  h-50 w-50 " onclick="selectImage(this)">
+                        <img src="{{URL('images/br2-logo.png')}}" class="col-3 pb-2  h-50 w-50 " onclick="selectImage(this)">
+                        <img src="{{URL('images/br3-logo.png')}}" class="col-3 pb-2  h-50 w-50 " onclick="selectImage(this)">
+                        <img src="{{URL('images/br1-logo.png')}}" class="col-3 pb-2  h-50 w-50 " onclick="selectImage(this)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function selectImage(img) {
+            const images = document.querySelectorAll('.image-container img');
+            images.forEach(image => image.classList.remove('selected'));
+            img.classList.add('selected');
+        }
+    </script>
+
+    <script>
+        function autoScroll() {
+            const wrapper = document.getElementById('scrolling-wrapper');
+            let scrollAmount = 0;
+            const scrollStep = 2;
+            const maxScroll = wrapper.scrollWidth - wrapper.clientWidth;
+
+            function step() {
+                scrollAmount += scrollStep;
+                if (scrollAmount >= maxScroll) {
+                    scrollAmount = 0;
+                    wrapper.scrollLeft -= wrapper.scrollWidth;
+                }
+
+                wrapper.scrollLeft += scrollStep;
+                requestAnimationFrame(step);
+            }
+
+            step();
+        }
+
+        setInterval(function() {
+            autoScroll();
+        }, 1000);
+    </script>
+
 </body>
 
 </html>

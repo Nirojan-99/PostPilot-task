@@ -267,23 +267,23 @@
                 <span style="color: #009387;font-family: 'Covered By Your Grace';">make your brand unforgettable</span>
             </h2>
 
-            <div class="row justify-content-center g-2">
-                <div class="col-md-4 mb-2 row p-2 rounded" style="background-color: #FDF3EA;">
-                    <img src="{{URL('images/img11.png')}}" class=" img-fluid  w-75 m-auto col-12">
+            <div class="row justify-content-center g-2 w-100">
+                <div class="col-md-4 mb-2 row  rounded " style="background-color: #FDF3EA;">
+                    <img src="{{URL('images/img11.png')}}" class=" img-fluid  w-75 m-auto col-12" style="width: 50%;">
                     <div class="mb-4 col-12"></div>
                     <div class="text-center h4 m-auto w-75 col-12">Plug-and-play with your stack</div>
                     <div class="mb-4 col-12"></div>
                     <div class="text-center m-auto w-75 col-12">Native integrations provide seamless segmentation, automation & tracking. No clunky spreadsheets.</div>
                 </div>
-                <div class="col-md-4 mb-2 row p-2 rounded" style="background-color: #E0F8F2;">
-                    <img src="{{URL('images/img12.png')}}" class=" img-fluid  w-75 m-auto col-12">
+                <div class="col-md-4 mb-2 row  rounded " style="background-color: #E0F8F2;">
+                    <img src="{{URL('images/img12.png')}}" class=" img-fluid  w-75 m-auto col-12" style="width: 50%;">
                     <div class="mb-4 col-12"></div>
                     <div class="text-center h4 m-auto w-75 col-12">Run campaigns on autopilot</div>
                     <div class="mb-4 col-12"></div>
                     <div class="text-center m-auto w-75 col-12">Ink profits while you sleep: Just set it and forget it.</div>
                 </div>
-                <div class="col-md-4 mb-2 row p-2 rounded" style="background-color: #E0F8F2;">
-                    <img src="{{URL('images/img13.png')}}" class=" img-fluid  w-75 m-auto col-12">
+                <div class="col-md-4 mb-2 row  rounded " style="background-color: #E0F8F2;">
+                    <img src="{{URL('images/img13.png')}}" class=" img-fluid  w-75 m-auto col-12" style="width: 50%;">
                     <div class="mb-4 col-12"></div>
                     <div class="text-center h4 m-auto w-75 col-12">Real-time ROI dashboard</div>
                     <div class="mb-4 col-12"></div>
@@ -291,23 +291,23 @@
                 </div>
 
             </div>
-            <div class="row justify-content-center g-2">
-                <div class="col-md-4 mb-2 row p-2 rounded" style="background-color: #D9F2F7;">
-                    <img src="{{URL('images/img14.png')}}" class=" img-fluid  w-75 m-auto col-12">
+            <div class="row justify-content-center g-2 text-center">
+                <div class="col-md-4 mb-2 row  rounded " style="background-color: #D9F2F7;">
+                    <img src="{{URL('images/img14.png')}}" class=" img-fluid  w-75 m-auto col-12" style="width: 50%;">
                     <div class="mb-4 col-12"></div>
                     <div class="text-center h4 m-auto w-75 col-12">Deliver WOW with *real* handwritten cards</div>
                     <div class="mb-4 col-12"></div>
                     <div class="text-center m-auto w-75 col-12"> Our proprietary robots use real pens and ink for an unforgettable VIP touch.</div>
                 </div>
-                <div class="col-md-4 mb-2 row p-2 rounded" style="background-color: #FAEDED;">
-                    <img src="{{URL('images/img15.png')}}" class=" img-fluid  w-75 m-auto col-12">
+                <div class="col-md-4 mb-2 row  rounded " style="background-color: #FAEDED;">
+                    <img src="{{URL('images/img15.png')}}" class=" img-fluid  w-75 m-auto col-12" style="width: 50%;">
                     <div class="mb-4 col-12"></div>
                     <div class="text-center h4 m-auto w-75 col-12">Predictable pricing</div>
                     <div class="mb-4 col-12"></div>
                     <div class="text-center m-auto w-75 col-12">Ink profits while you sleep: Just set it and forget it.</div>
                 </div>
-                <div class="col-md-4 mb-2 row p-2 rounded" style="background-color: #F1F1F1;">
-                    <img src="{{URL('images/img16.png')}}" class=" img-fluid  w-75 m-auto col-12">
+                <div class="col-md-4 mb-2 row  rounded " style="background-color: #F1F1F1;">
+                    <img src="{{URL('images/img16.png')}}" class=" img-fluid  w-75 m-auto col-12" style="width: 50%;">
                     <div class="mb-4 col-12"></div>
                     <div class="text-center h4 m-auto w-75 col-12">Complimentary concierge service</div>
                     <div class="mb-4 col-12"></div>
@@ -509,6 +509,50 @@
         </div>
     </section>
 
+    <section class="p-0" style="background-color: #FF6D2C;">
+        <div class="container py-0 my-0 " style="color: #fff;">
+            <div class="row ">
+                <div class="col-md-6 col-xs-12 mt-md-0 mt-xs-5 ">
+                    <h1 class="text-left mt-4  mb-3 responsive-text" style="color: #fff;">Try PostPilot Risk-Free
+
+                    </h1>
+                    <p>No contracts. No commitments. Guaranteed results.*</p>
+
+                    <div class=" text-left">
+                        <a href="" class="btn border px-4 py-2 rounder-pill bg-light" style="font-weight: 700;">Get Started</a>
+                        <span class="fs-6 ml-3 ">5.0 shopify rating</span>
+                    </div>
+
+                    <p class="mt-4">* for qualified brands with over $1m annual Shopify revenue.</p>
+
+                </div>
+                <div class="col-md-6 col-xs-12 w-100 h-100 d-md-block d-none">
+                    <img src="{{URL('images/img23.png')}}" alt="" class="w-75 ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container text-center">
+            <h1 class=" mb-5" style="font-weight: 700;font-size: 60px;">Latest trends & <span style="color: #009387;font-family: 'Covered By Your Grace';">insights</span></h1>
+            <div class="row">
+                <div class="col-md-4 mb-2">
+                    <img src="{{URL('images/img30.png')}}" class=" img-fluid  w-100">
+                    <p class="h5 mt-2">3 Low-Cost Campaigns You Must Run to Win BFCM</p>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <img src="{{URL('images/img31.png')}}" class=" img-fluid  w-100">
+                    <p class="h5 mt-2">Postcard Marketing: The Definitive Guide to High ROI [2022]</p>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <img src="{{URL('images/img33.png')}}" class=" img-fluid  w-100">
+                    <p class="h5 mt-2">The Ultimate Guide to Thank You Notes for Ecommerce</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <script>
         function selectImage(img) {
@@ -540,7 +584,7 @@
         }
 
         setInterval(function() {
-            autoScroll();
+            // autoScroll();
         }, 1000);
     </script>
 
